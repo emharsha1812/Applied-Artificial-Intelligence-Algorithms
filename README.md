@@ -16,16 +16,16 @@ The PSO algorithm is as follows:
 4. If the cost of an agent’s current position is better than the cost of the personal best, update the personal best of the agent.
 5. Repeat steps 2–4 until a criterion is met. This criterion can be a predetermined value of a global function or the number of iterations
 
-flowchart TD;
-A[Start] --> B(Initialize the agents)
-B --> C(Initialize the velocities of these agents)
-C --> D(Evaluate the cost of each agent)
-D --> E(Select the optimal agent)
-E --> F(Update the velocity of the agents)
-F --> G(Update the position of agents)
-G --> H{Is Cost_positionnew < Cost_position_best}
-H --> |Yes| J(Update the personal bests of agents)
-H --> |No| I{Criterion Met}
-J --> I
-I --> |No| D
-I --> |Yes| L(End)
+flowchart TD
+    A[Start] --> B(Initialize the agents)
+    B --> C(Initialize the velocities of these agents)
+    C --> D(Evaluate the cost of each agent)
+    D --> E(Select the optimal agent)
+    E --> F(Update the velocity of the agents)
+    F --> G(Update the position of agents)
+    G --> H{Is Cost_positionnew < Cost_position_best}
+    H --> |Yes| J(Update the personal bests of agents)
+    H --> |No| I{Criterion Met}
+    J --> I
+    I --> |No| D
+    I --> |Yes| L(End)
