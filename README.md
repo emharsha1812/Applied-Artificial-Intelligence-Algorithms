@@ -1,3 +1,8 @@
+<script type="module">
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+
 # About the projects
 
 
@@ -15,7 +20,10 @@ The PSO algorithm is as follows:
 3. Evaluate the velocities of the agents and update their positions.
 4. If the cost of an agent’s current position is better than the cost of the personal best, update the personal best of the agent.
 5. Repeat steps 2–4 until a criterion is met. This criterion can be a predetermined value of a global function or the number of iterations
-'''mermaid
+
+
+<pre>
+    '''mermaid
 flowchart TD
     A[Start] --> B(Initialize the agents)
     B --> C(Initialize the velocities of these agents)
@@ -30,3 +38,6 @@ flowchart TD
     I --> |No| D
     I --> |Yes| L(End)
 '''
+        
+</pre>
+
